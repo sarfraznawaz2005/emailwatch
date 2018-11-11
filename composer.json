@@ -1,0 +1,36 @@
+{
+  "name": "sarfraznawaz2005/emailwatch",
+  "description": "Laravel package to open sent emails in default email client directly.",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Sarfraz Ahmed",
+      "email": "sarfraznawaz2005@gmail.com",
+      "homepage": "http://codeinphp.github.io"
+    }
+  ],
+  "homepage": "https://github.com/sarfraznawaz2005/emailwatch",
+  "keywords": [
+    "Laravel",
+    "Email",
+    "Watch",
+    "Eml"
+  ],
+  "require": {
+    "illuminate/support": "~5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sarfraznawaz2005\\EmailWatch\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sarfraznawaz2005\\EmailWatch\\ServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
+}
