@@ -10,6 +10,7 @@ namespace Sarfraznawaz2005\EmailWatch;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Mail\Events\MessageSent;
+use Illuminate\Support\Str;
 use Swift_Mime_SimpleMessage;
 
 class EmailWatch
@@ -65,7 +66,7 @@ class EmailWatch
 
         $subject = $message->getSubject();
 
-        return $this->path . '/' . str_slug($message->getDate()->getTimestamp() . '_' . $to . '_' . $subject, '_');
+        return $this->path . '/' . Str::slug($message->getDate()->getTimestamp() . '_' . $to . '_' . $subject, '_');
     }
 
     /**
